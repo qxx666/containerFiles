@@ -1,0 +1,16 @@
+version: '3.0'
+services:
+  mongo-container:
+    image: mongo
+    container_name: mongodb
+    environment:
+        - MONGO_INITDB_ROOT_USERNAME=root
+        - MONGO_INITDB_ROOT_PASSWORD=517517
+    ports:
+      - "27017:27017"
+    volumes:
+      - /d/langenv/wsl/data/volume/mongo:/data/db
+    restart: always
+    command: mongod
+    
+

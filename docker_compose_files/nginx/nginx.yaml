@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+    nginx:
+        image: nginx
+        hostname: nginx
+        container_name: nginx
+        ports:
+          - 80:80
+          - 443:443
+        volumes:
+          - ./conf:/etc/nginx
+volumes:
+    nginx:

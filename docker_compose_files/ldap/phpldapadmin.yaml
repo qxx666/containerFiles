@@ -1,0 +1,13 @@
+version: "3.0"
+
+services: 
+    phpldapadmin:
+        container_name: phpldapadmin
+        hostname: phpldapadmin
+        image: osixia/phpldapadmin
+        ports: 
+            - 8080:80 
+        environment:
+            - PHPLDAPADMIN_HTTPS=false
+            - PHPLDAPADMIN_LDAP_HOSTS=openldap
+        restart: always
