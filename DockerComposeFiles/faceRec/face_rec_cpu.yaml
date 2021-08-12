@@ -1,0 +1,12 @@
+version: "3.0"
+
+services: 
+    face_recognition:
+        container_name: facerec_cpu
+        hostname: facerec_cpu
+        image: facerec_cpu:v2.0
+        ports: 
+            - 2678:2678
+        volumes: 
+            - ./examples:/root/examples
+        restart: always

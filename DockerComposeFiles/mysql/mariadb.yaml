@@ -5,7 +5,7 @@ services:
     container_name: mariadb
     image: mariadb
     volumes:
-      - /d/langenv/wsl/data/volume/mysql:/var/lib/mysql
+      - /data/volume/mysql:/var/lib/mysql
     ports:
       - 3306:3306
     environment:

@@ -1,0 +1,11 @@
+version: "3.0"
+
+services: 
+    face_recognition:
+        container_name: facerec_gpu
+        hostname: facerec_gpu
+        image: facerec_gpu:v1.0
+        ports: 
+            - 2679:2679
+        volumes: 
+            - ./examples:/root/examples
